@@ -26,10 +26,6 @@ p{
   margin-left: 0.5em;
 }
 
-body{
-  background-color: #fcfcfc;
-}
-
 #lol{
   color: white;
   font-size: 200%;
@@ -68,7 +64,6 @@ header{
 }
 
 section{
-    background-color: grey;
     height: 18em;
     margin-top: 2em;
 }
