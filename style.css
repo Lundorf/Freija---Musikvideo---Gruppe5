@@ -1,0 +1,37 @@
+*{
+ box-sizing: border-box;
+ z-index: 1;
+}
+
+p{
+  font-family: 'Anton', sans-serif;
+  color: white;
+  margin-left: 0.5em;
+}
+
+body{
+  background-color: yellow;
+}
+
+header{
+  background-color: red;
+  height: 6em;
+  margin-top: 0%;
+}
+
+nav{
+  background-color: pink;
+  height: 3em;
+}
+
+section{
+    background-color: grey;
+    height: 18em;
+    margin-top: 2em;
+}
+
+footer{
+  background-color: blue;
+  height: 6em;
+  margin-top: 2em;
+}
