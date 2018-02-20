@@ -3,6 +3,9 @@
 
 
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Freija</title>
@@ -11,21 +14,44 @@
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 <body>
+
+
 <header>
-  <p>Header!</p>
-  <nav>
-    <p>Navigation!</p>
+  <span class="menu-open">MENU</span>
+  <nav id="mobile-nav">
+    <ul id="mobile-dropdown">
+      <li><a href="#1">Home</a></li>
+      <li><a href="#2">Music</a></li>
+      <li><a href="#3">About</a></li>
+      <li><a href="#4">Video</a></li>
+    </ul>
   </nav>
 </header>
 
+<img id="logo" src="img/f1.png" alt="freija logo">
+
 <section>
-  <p>Section!</p>
+  <iframe src="https://www.youtube.com/embed/BBrvNF6hI4I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <p id="lol">KOM OG HØR FREIJAS MUSIK, DET ER FUCKING SINDSSYGT!</p>
 </section>
 
 <footer>
-  <p>Footer!</p>
+  <ul id="social">
+    <li><a href="#face"><i class="fa fa-facebook-square"></i></a></li>
+    <li><a href="#spotify"><i class="fa fa-spotify"></i></a></li>
+    <li><a href="#youtube"><i class="fa fa-youtube"></i></a></li>
+    <li><a href="#insta"><i class="fa fa-instagram"></i></a></li>
+  </ul>
 </footer>
 
 </body>
+
+<script>
+$(document).ready(function(){
+    $(".menu-open").click(function(){
+        $("#mobile-nav").slideToggle();
+    });
+});
+</script>
 
 </html>

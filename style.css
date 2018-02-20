@@ -3,6 +3,23 @@
  z-index: 1;
 }
 
+html{
+  max-height: 100%;
+}
+
+body{
+  background-image: url(img/skov.jpg);
+  background-size: cover;
+  margin: 0;
+  max-height: 100%;
+}
+
+.menu-open{
+  font-family: 'Anton', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+}
+
 p{
   font-family: 'Anton', sans-serif;
   color: white;
@@ -10,18 +27,44 @@ p{
 }
 
 body{
-  background-color: yellow;
+  background-color: #fcfcfc;
+}
+
+#lol{
+  color: white;
+  font-size: 200%;
 }
 
 header{
-  background-color: red;
-  height: 6em;
-  margin-top: 0%;
+  padding: 0;
+  text-align: center;
+  background-color: grey;
+  border-radius: 0.2em;
 }
 
-nav{
-  background-color: pink;
-  height: 3em;
+#mobile-nav{
+  display: none;
+  text-align: left;
+  background-color: #e8e0d5;
+  border-radius: 0em 0em 0.2em 0.2em;
+}
+
+#mobile-dropdown{
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+  font-family: 'Anton', sans-serif;
+}
+
+#mobile-dropdown>li{
+
+  margin-top: 0.5em;
+}
+
+#mobile-dropdown>li>a{
+  text-decoration: none;
+  color: white;
+
 }
 
 section{
@@ -31,7 +74,52 @@ section{
 }
 
 footer{
-  background-color: blue;
+  bottom: 0;
+  border-radius: 0.2em;
+  background-color: grey;
   height: 6em;
-  margin-top: 2em;
+  margin-top: 10em;
+}
+
+#logo{
+  max-width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+/*#background{
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}*/
+
+#social{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 1.5em 0em;
+  list-style-type: none;
+  margin: 0;
+}
+
+#social>li{
+}
+
+#social>li>a{
+  color: white;
+}
+
+#social>li>a>i{
+  font-size: 250%;
+}
+
+iframe{
+  border-radius: 0.5em;
+  width: 100%;
+  height: 100%;
 }
